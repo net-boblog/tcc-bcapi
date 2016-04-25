@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:jaxws="http://cxf.apache.org/jaxws"
+	xsi:schemaLocation="http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd"
+	default-lazy-init="true">
+
+	<description>Apache CXF的 SOAP Web Service配置</description>
+ 	
+ 	<bean id="enterpriseWebImp" class="com.tinet.api.boss2.web.imp.EnterpriseWebImp" />
+ 	<jaxws:endpoint id="enterpriseWeb" implementor="#enterpriseWebImp" address="/enterprise" />
+ 	
+ 	<bean id="trunkWebImp" class="com.tinet.api.boss2.web.imp.TrunkWebImp" />
+ 	<jaxws:endpoint id="trunkWeb" implementor="#trunkWebImp" address="/trunk" />
+ 	
+ 	<bean id="enterpriseSettingWebImp" class="com.tinet.api.boss2.web.imp.EnterpriseSettingWebImp" />
+ 	<jaxws:endpoint id="enterpriseSettingWeb" implementor="#enterpriseSettingWebImp" address="/enterpriseSetting" />
+ 	
+ 	<bean id="enterpriseHotlineWebImp" class="com.tinet.api.boss2.web.imp.EnterpriseHotlineWebImp" />
+ 	<jaxws:endpoint id="enterpriseHotlineWeb" implementor="#enterpriseHotlineWebImp" address="/enterpriseHotline" />
+ 	
+ 	<bean id="bizOpenWebImp" class="com.tinet.api.boss2.web.imp.BizOpenWebImp" />
+ 	<jaxws:endpoint id="bizOpenWeb" implementor="#bizOpenWebImp" address="/bizOpen" />
+ 	
+ 	<bean id="accountWebImp" class="com.tinet.api.boss2.web.imp.AccountWebImp" />
+ 	<jaxws:endpoint id="accountWeb" implementor="#accountWebImp" address="/account" />
+ 	
+ 	<bean id="bizChangeWebImp" class="com.tinet.api.boss2.web.imp.BizChangeWebImp" />
+ 	<jaxws:endpoint id="bizChangeWeb" implementor="#bizChangeWebImp" address="/bizChange" />
+ 	
+ 	<bean id="chargeWebImp" class="com.tinet.api.boss2.web.imp.ChargeWebImp" />
+ 	<jaxws:endpoint id="chargeWeb" implementor="#chargeWebImp" address="/charge" />
+ 	
+ 	<bean id="deductionWebImp" class="com.tinet.api.boss2.web.imp.DeductionWebImp" />
+ 	<jaxws:endpoint id="deductionWeb" implementor="#deductionWebImp" address="/deduct" />
+ 	
+ 	<bean id="creditWebImp" class="com.tinet.api.boss2.web.imp.CreditWebImp" />
+ 	<jaxws:endpoint id="creditWeb" implementor="#creditWebImp" address="/credit" />
+ 	
+ 	<bean id="routersetWebImp" class="com.tinet.api.boss2.web.imp.RoutersetWebImp" />
+ 	<jaxws:endpoint id="routersetWeb" implementor="#routersetWebImp" address="/routerset" />
+ 	
+ 	<bean id="routerWebImp" class="com.tinet.api.boss2.web.imp.RouterWebImp" />
+ 	<jaxws:endpoint id="routerWeb" implementor="#routerWebImp" address="/router" />
+ 
+ 	<bean id="systemSettingWebImp" class="com.tinet.api.boss2.web.imp.SystemSettingWebImp" />
+ 	<jaxws:endpoint id="systemSettingWeb" implementor="#systemSettingWebImp" address="/systemSetting" />
+ 	
+ 	<bean id="gatewayWebImp" class="com.tinet.api.boss2.web.imp.GatewayWebImp" />
+ 	<jaxws:endpoint id="gatewayWeb" implementor="#gatewayWebImp" address="/gateway" />
+ 	
+ 	<bean id="ratesetWebImp" class="com.tinet.api.boss2.web.imp.RatesetWebImp" />
+ 	<jaxws:endpoint id="ratesetWeb" implementor="#ratesetWebImp" address="/rateset" />
+ 	
+ 	<bean id="rateWebImp" class="com.tinet.api.boss2.web.imp.RateWebImp" />
+ 	<jaxws:endpoint id="rateWeb" implementor="#rateWebImp" address="/rate" />
+ 	
+ 	<bean id="comboWebImp" class="com.tinet.api.boss2.web.imp.ComboWebImp" />
+ 	<jaxws:endpoint id="comboWeb" implementor="#comboWebImp" address="/combo" />
+ 	
+ 	<bean id="sbcWebImp" class="com.tinet.api.boss2.web.imp.SbcWebImp" />
+ 	<jaxws:endpoint id="sbcWeb" implementor="#sbcWebImp" address="/sbc" />
+ 	
+ 	<bean id="ctiWebImp" class="com.tinet.api.boss2.web.imp.CtiWebImp" />
+ 	<jaxws:endpoint id="ctiWeb" implementor="#ctiWebImp" address="/cti" />
+ 	
+ 	<bean id="systemMonitorWebImp" class="com.tinet.api.boss2.web.imp.SystemMonitorWebImp" />
+ 	<jaxws:endpoint id="systemMonitorWeb" implementor="#systemMonitorWebImp" address="/systemMonitor" />
+ 	
+ 	<bean id="enterpriseComboWebImp" class="com.tinet.api.boss2.web.imp.EnterpriseComboWebImp" />
+ 	<jaxws:endpoint id="enterpriseComboWeb" implementor="#enterpriseComboWebImp" address="/enterpriseCombo" />
+ 	
+ 	<bean id="enterpriseVoiceWebImp" class="com.tinet.api.boss2.web.imp.EnterpriseVoiceWebImp" />
+ 	<jaxws:endpoint id="enterpriseVoiceWeb" implementor="#enterpriseVoiceWebImp" address="/enterpriseVoice" />
+ 	
+ 	<bean id="publicVoiceWebImp" class="com.tinet.api.boss2.web.imp.PublicVoiceWebImp" />
+ 	<jaxws:endpoint id="publicVoiceWeb" implementor="#publicVoiceWebImp" address="/publicVoice" />
+ 	
+ 	<bean id="crontabWebImp" class="com.tinet.api.boss2.web.imp.CrontabWebImp" />
+ 	<jaxws:endpoint id="crontabWeb" implementor="#crontabWebImp" address="/crontab" />
+ 	
+ 	<bean id="noticeWebImp" class="com.tinet.api.boss2.web.imp.NoticeWebImp" />
+ 	<jaxws:endpoint id="noticeWeb" implementor="#noticeWebImp" address="/notice" />
+ 	
+</beans>

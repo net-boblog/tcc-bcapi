@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>pbcapi</groupId>
 	<artifactId>pbcapi</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>2.1.0</version>
 	<packaging>war</packaging>
 	<name>pbcapi</name>
 	<description />
